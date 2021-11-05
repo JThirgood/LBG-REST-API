@@ -87,3 +87,11 @@ n.b: For these commands anything surrounded by angled braces <> needs to be repl
 ---
 
 By Jackson Thirgood
+
+# Testing
+
+To run tests on this project, use the command.
+
+~~~ bash
+npm test
+~~~
