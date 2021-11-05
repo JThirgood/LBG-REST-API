@@ -1,9 +1,9 @@
 const express = require('express'); // express import from node_modules
-const Datastore = require('nedb'); // Database import from node_modules
+const Datastore = require('nedb'); // Database import from node_modules -- depricated but good to use for in-memory DBs
 const db = new Datastore(); // Database setup
 const chalk = require('chalk'); // chalk import from node_modules
 const app = express(); // 
-const log = console.log; // setting console.log to log
+const log = console.log; // setting console.log to log -- Nice shortcut - one to remember :)
 const bodyParser = require('body-parser'); // Body Parser for data in http requests
 
 // add body parser to app
@@ -153,7 +153,7 @@ app.delete('/product/delete/:id', (req,res) => {
         if (err) res.send(err);
         
         // otherwise we send HTTP status of 204 (NO CONTENT)
-        res.status(202).send(`Deleted product by id: ${prodId}`);
+        res.status(204).send(`Deleted product by id: ${prodId}`);
 
         // console log that we are deleting the products
         log(`Deleted product by id: ${prodId}`);
