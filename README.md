@@ -145,4 +145,3 @@ AND they enter a price
 AND they click on the PUT button
 THEN the updated product is visible on the page
 
-###minor edit
