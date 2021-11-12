@@ -1,0 +1,6 @@
+projectKey=LBG-Proj
+serverUrl=http://34.65.177.172:9000
+serverVersion=9.1.0.47736
+dashboardUrl=http://34.65.177.172:9000/dashboard?id=LBG-Proj
+ceTaskId=AX0JOdo7pLj3z2C0_x-N
+ceTaskUrl=http://34.65.177.172:9000/api/ce/task?id=AX0JOdo7pLj3z2C0_x-N

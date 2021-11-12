@@ -1,0 +1,7 @@
+*.md
+kubernetes/*
+.dockerignore
+app.test.js
+dockerBuildApp.sh
+LICENCE
+node_modules
