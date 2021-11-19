@@ -19,7 +19,7 @@ docker tag jackson-nodeapp-image:${BUILD_NUMBER}  gcr.io/lbg-training/jackson-no
 docker push gcr.io/lbg-training/jackson-nodeapp-image:${BUILD_NUMBER}
 
 #Run the container to launch the app
-docker run -d -p 5000:9000 --name jackson-nodeapp-container jackson-nodeapp-image:${BUILD_NUMBER}
+#docker run -d -p 5000:9000 --name jackson-nodeapp-container jackson-nodeapp-image:${BUILD_NUMBER}
 
 #Clean up old images
-docker system prune -af
+#docker system prune -af
