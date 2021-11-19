@@ -1,0 +1,26 @@
+apiVersion: apps/v1 
+
+kind: Deployment 
+metadata: 
+  name: jackson-nodeapp 
+  labels: 
+    app: jackson-nodeapp 
+spec: 
+  replicas: 2 
+  selector: 
+    matchLabels: 
+      app: jackson-nodeapp
+  strategy:
+    rollingUpdate:
+      maxSurge: 10%
+      maxUnavailable: 25%
+  template: 
+    metadata: 
+      labels: 
+        app: jackson-nodeapp 
+    spec: 
+      containers: 
+      - name: jackson-nodeapp-container 
+        image: gcr.io/lbg-training/jackson-nodeapp-image:31
+        ports:
+        - containerPort: 9000
